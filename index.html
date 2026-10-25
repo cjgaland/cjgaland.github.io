@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Calidad y Seguridad del Paciente · Apps</title>
+  <meta name="description" content="Apps gratuitas para analizar, dibujar procesos, prevenir riesgos, medir, auditar y mejorar la calidad y la seguridad del paciente, paso a paso y con tus datos solo en tu dispositivo." />
+  <meta name="theme-color" content="#0d1b2a" />
+  <link rel="manifest" href="manifest.json?v=1" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=1" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png?v=1" />
+  <link rel="apple-touch-icon" href="icon-180.png?v=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Calidad y Seguridad" />
+  <script>
+    // Tema antes de pintar. El portal comparte origen con todas las apps: solo usa claves "portal-…".
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("portal-tema"); } catch (e) { /* sin almacenamiento */ }
+      if (t !== "claro" && t !== "oscuro") t = matchMedia("(prefers-color-scheme: dark)").matches ? "oscuro" : "claro";
+      document.documentElement.setAttribute("data-tema", t);
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css?v=2026.01" />
+</head>
+<body>
+  <a class="saltar" href="#principal">Saltar al contenido</a>
+
+  <header class="app-header">
+    <a class="header-brand" href="./" aria-label="Calidad y Seguridad del Paciente, inicio">
+      <img class="header-logo" src="icon-192.png?v=1" alt="" width="38" height="38" />
+      <span style="min-width:0">
+        <span class="header-title">Calidad y Seguridad</span>
+        <span class="header-subtitle">Apps para la mejora continua</span>
+      </span>
+    </a>
+    <div class="header-actions">
+      <button class="icon-btn" id="btn-tema" type="button" aria-label="Cambiar a modo oscuro" title="Modo claro / oscuro">◐</button>
+    </div>
+  </header>
+
+  <main class="view" id="principal" tabindex="-1">
+
+    <!-- ===== Portada ===== Titular elegido entre las tres propuestas de Diseño/DISEÑO_PORTAL.md (§ 3) -->
+    <section class="hero" aria-labelledby="titular">
+      <p class="hero-kicker">Calidad y seguridad del paciente</p>
+      <h1 id="titular">Del análisis a la mejora, paso a paso</h1>
+      <p class="hero-lead">Apps gratuitas que te guían para analizar tu unidad, dibujar sus procesos, prevenir riesgos, medir, auditar y mejorar. Se usan en el navegador, sin instalar nada, y tus datos se quedan en tu dispositivo.</p>
+      <ul class="hero-puntos" aria-label="Características">
+        <li>Gratis y sin registro</li>
+        <li>Funciona en el móvil y sin conexión</li>
+        <li>Datos solo en tu dispositivo</li>
+        <li>Aprendes mientras lo haces</li>
+      </ul>
+      <div class="hero-acciones">
+        <a class="btn btn--primary" href="#calidad">Ver las apps</a>
+        <a class="btn" href="#mapa">Cómo encajan</a>
+      </div>
+    </section>
+
+    <!-- ===== Ecosistema Calidad ===== (en el orden del ciclo de mejora, igual que el mapa) -->
+    <section class="seccion" id="calidad" aria-labelledby="t-calidad" style="--acento: var(--cyan)">
+      <h2 class="seccion-titulo" id="t-calidad"><span class="marca" aria-hidden="true"></span>Ecosistema Calidad</h2>
+      <p class="seccion-lead">Siete apps hermanas con el mismo aspecto y la misma forma de trabajar. Cada una se usa sola, y además se pasan datos entre ellas.</p>
+      <ul class="apps apps--3">
+        <li><a class="app-card" href="https://cjgaland.github.io/dafo/"><img class="app-icono" src="iconos/dafo.png" alt="" width="52" height="52" /><span class="app-texto"><span class="app-nombre">DAFO · CAME</span><span class="app-frase">Analiza tu servicio o unidad y conviértelo en estrategias y en un plan de acción.</span><span class="app-ir">Abrir DAFO · CAME ›</span></span></a></li>
+        <li><a class="app-card" href="https://cjgaland.github.io/flujograma/"><img class="app-icono" src="iconos/flujograma.png" alt="" width="52" height="52" /><span class="app-texto"><span class="app-nombre">Flujograma</span><span class="app-frase">Escribe los pasos de un proceso y la app dibuja el diagrama, con sus puntos críticos.</span><span class="app-ir">Abrir Flujograma ›</span></span></a></li>
+        <li><a class="app-card" href="https://cjgaland.github.io/amfe/"><img class="app-icono" src="iconos/amfe.png" alt="" width="52" height="52" /><span class="app-texto"><span class="app-nombre">AMFE</span><span class="app-frase">Anticipa qué puede fallar en un proceso, prioriza los riesgos y planifica cómo evitarlos.</span><span class="app-ir">Abrir AMFE ›</span></span></a></li>
+        <li><a class="app-card" href="https://cjgaland.github.io/mapa-riesgos/"><img class="app-icono" src="iconos/mapa-riesgos.png" alt="" width="52" height="52" /><span class="app-texto"><span class="app-nombre">Mapa de Riesgos</span><span class="app-frase">Une el flujograma y el AMFE en el mapa de riesgos de un proceso, con su documento final.</span><span class="app-ir">Abrir Mapa de Riesgos ›</span></span></a></li>
+        <li><a class="app-card" href="https://cjgaland.github.io/indicadores-calidad/"><img class="app-icono" src="iconos/indicadores.png" alt="" width="52" height="52" /><span class="app-texto"><span class="app-nombre">Indicadores</span><span class="app-frase">Diseña indicadores bien definidos y comprueba que miden lo que de verdad importa.</span><span class="app-ir">Abrir Indicadores ›</span></span></a></li>
+        <li><a class="app-card" href="https://cjgaland.github.io/tamano-muestral/"><img class="app-icono" src="iconos/tamano-muestral.png" alt="" width="52" height="52" /><span class="app-texto"><span class="app-nombre">Tamaño Muestral</span><span class="app-frase">Calcula cuántos casos revisar para que tus resultados sean fiables.</span><span class="app-ir">Abrir Tamaño Muestral ›</span></span></a></li>
+        <li><a class="app-card" href="https://cjgaland.github.io/auditorias/"><img class="app-icono" src="iconos/auditorias.png" alt="" width="52" height="52" /><span class="app-texto"><span class="app-nombre">Auditorías</span><span class="app-frase">Planifica, haz e informa una auditoría y sigue las mejoras hasta cerrar el ciclo.</span><span class="app-ir">Abrir Auditorías ›</span></span></a></li>
+      </ul>
+    </section>
+
+    <!-- ===== Seguridad ===== -->
+    <section class="seccion" id="seguridad" aria-labelledby="t-seguridad" style="--acento: var(--pV)">
+      <h2 class="seccion-titulo" id="t-seguridad"><span class="marca" aria-hidden="true"></span>Seguridad</h2>
+      <ul class="apps">
+        <li><a class="app-card" href="https://cjgaland.github.io/rondas-seguridad/"><img class="app-icono" src="iconos/rondas-seguridad.png" alt="" width="52" height="52" /><span class="app-texto"><span class="app-nombre">Rondas de Seguridad</span><span class="app-frase">Prepara y haz rondas de seguridad a pie de cama y descubre lo que falla una y otra vez.</span><span class="app-ir">Abrir Rondas de Seguridad ›</span></span></a></li>
+      </ul>
+    </section>
+
+    <!-- ===== Acreditación ===== -->
+    <section class="seccion" id="acreditacion" aria-labelledby="t-acreditacion" style="--acento: var(--green)">
+      <h2 class="seccion-titulo" id="t-acreditacion"><span class="marca" aria-hidden="true"></span>Acreditación</h2>
+      <ul class="apps">
+        <li><a class="app-card" href="https://cjgaland.github.io/Estandares-ACSA/"><img class="app-icono" src="iconos/acsa.svg" alt="" width="52" height="52" /><span class="app-texto"><span class="app-nombre">Estándares ACSA</span><span class="app-frase">Busca y consulta los estándares del manual de acreditación de unidades de gestión clínica.</span><span class="app-ir">Abrir Estándares ACSA ›</span></span></a></li>
+      </ul>
+    </section>
+
+    <!-- ===== Herramientas de apoyo ===== (conservan su propia imagen y no intercambian datos con las demás) -->
+    <section class="seccion" id="apoyo" aria-labelledby="t-apoyo" style="--acento: var(--text-3)">
+      <h2 class="seccion-titulo" id="t-apoyo"><span class="marca" aria-hidden="true"></span>Herramientas de apoyo</h2>
+      <p class="seccion-lead">Utilidades independientes, con su propia imagen, que te ayudan en el trabajo de calidad. No intercambian datos con las demás apps.</p>
+      <ul class="apps">
+        <li><a class="app-card" href="https://cjgaland.github.io/anonimizador-rgpd-web/"><img class="app-icono" src="iconos/anonimizador.png" alt="" width="52" height="52" /><span class="app-texto"><span class="app-nombre">Anonimizador RGPD</span><span class="app-frase">Seudonimiza o anonimiza hojas de cálculo antes de compartirlas, sin que los datos salgan de tu navegador.</span><span class="app-ir">Abrir Anonimizador RGPD ›</span></span></a></li>
+        <li><a class="app-card" href="https://cjgaland.github.io/normalizador-bibliografico/"><img class="app-icono" src="iconos/normalizador.png" alt="" width="52" height="52" /><span class="app-texto"><span class="app-nombre">Normalizador Bibliográfico</span><span class="app-frase">Pega tus referencias y obtenlas en Vancouver, APA y otros estilos, o en BibTeX y RIS.</span><span class="app-ir">Abrir Normalizador Bibliográfico ›</span></span></a></li>
+      </ul>
+    </section>
+
+    <!-- ===== Mapa de interrelaciones ===== -->
+    <section class="seccion" id="mapa" aria-labelledby="t-mapa" style="--acento: var(--pP)">
+      <h2 class="seccion-titulo" id="t-mapa"><span class="marca" aria-hidden="true"></span>Cómo encajan</h2>
+      <p class="seccion-lead">Las apps siguen el ciclo de la mejora continua. Puedes empezar por cualquiera, pero juntas te llevan del análisis a la mejora.</p>
+      <figure class="mapa">
+        <!-- Versión horizontal (pantallas anchas) -->
+        <svg class="mapa-h" viewBox="0 0 1000 320" role="img" aria-labelledby="mapa-h-t">
+          <title id="mapa-h-t">Mapa de las apps en el ciclo de mejora</title>
+          <defs>
+            <marker id="mh-p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="m-punta" d="M0 0 L10 5 L0 10 z"/></marker>
+            <marker id="mh-v" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" style="fill: var(--cyan)"/></marker>
+          </defs>
+          <!-- Fases -->
+          <text class="m-fase m-t1" x="85" y="34" text-anchor="middle">1 · Analizar</text>
+          <text class="m-fase m-t2" x="251" y="34" text-anchor="middle">2 · Procesos</text>
+          <text class="m-fase m-t3" x="417" y="34" text-anchor="middle">3 · Riesgos</text>
+          <text class="m-fase m-t4" x="583" y="34" text-anchor="middle">4 · Medir</text>
+          <text class="m-fase m-t5" x="749" y="34" text-anchor="middle">5 · Verificar</text>
+          <text class="m-fase m-t6" x="915" y="34" text-anchor="middle">6 · Mejorar</text>
+          <!-- Cajas -->
+          <rect class="m-caja m-c1" x="15" y="86" width="140" height="48" rx="10"/><text class="m-app" x="85" y="115" text-anchor="middle">DAFO · CAME</text>
+          <rect class="m-caja m-c2" x="181" y="86" width="140" height="48" rx="10"/><text class="m-app" x="251" y="115" text-anchor="middle">Flujograma</text>
+          <rect class="m-caja m-c3" x="347" y="58" width="140" height="44" rx="10"/><text class="m-app" x="417" y="85" text-anchor="middle">AMFE</text>
+          <rect class="m-caja m-c3" x="347" y="118" width="140" height="44" rx="10"/><text class="m-app" x="417" y="145" text-anchor="middle">Mapa de Riesgos</text>
+          <rect class="m-caja m-c4" x="513" y="58" width="140" height="44" rx="10"/><text class="m-app" x="583" y="85" text-anchor="middle">Indicadores</text>
+          <rect class="m-caja m-c4" x="513" y="118" width="140" height="44" rx="10"/><text class="m-app" x="583" y="145" text-anchor="middle">Tamaño Muestral</text>
+          <rect class="m-caja m-c5" x="679" y="58" width="140" height="44" rx="10"/><text class="m-app" x="749" y="85" text-anchor="middle">Auditorías</text>
+          <rect class="m-caja m-c5" x="679" y="118" width="140" height="44" rx="10"/><text class="m-app" x="749" y="137" text-anchor="middle"><tspan x="749">Rondas de</tspan><tspan x="749" dy="16">Seguridad</tspan></text>
+          <rect class="m-mejora" x="845" y="80" width="140" height="60" rx="30"/><text class="m-app" x="915" y="106" text-anchor="middle"><tspan x="915">Acciones</tspan><tspan x="915" dy="17">de mejora</tspan></text>
+          <!-- Flechas del ciclo -->
+          <path class="m-flecha" d="M157 110 H179" marker-end="url(#mh-p)"/>
+          <path class="m-flecha" d="M323 110 H345" marker-end="url(#mh-p)"/>
+          <path class="m-flecha" d="M417 104 V116" marker-end="url(#mh-p)"/>
+          <path class="m-flecha" d="M489 110 H511" marker-end="url(#mh-p)"/>
+          <path class="m-flecha" d="M655 110 H677" marker-end="url(#mh-p)"/>
+          <path class="m-flecha" d="M821 110 H843" marker-end="url(#mh-p)"/>
+          <!-- Vuelta a empezar -->
+          <path class="m-vuelta" d="M915 142 V196 H85 V138" marker-end="url(#mh-v)"/>
+          <text class="m-vuelta-txt" x="500" y="220" text-anchor="middle">… y vuelta a empezar: se mide otra vez y se revisa el análisis</text>
+          <!-- La Guía lo une todo -->
+          <rect class="m-guia" x="15" y="244" width="970" height="58" rx="14"/>
+          <text class="m-guia-txt" x="500" y="279" text-anchor="middle">Guía de Calidad y Seguridad: explica cada paso y cómo encajan las apps (próximamente)</text>
+        </svg>
+
+        <!-- Versión vertical (móvil) -->
+        <svg class="mapa-v" viewBox="0 0 360 668" role="img" aria-labelledby="mapa-v-t">
+          <title id="mapa-v-t">Mapa de las apps en el ciclo de mejora</title>
+          <defs>
+            <marker id="mv-p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="m-punta" d="M0 0 L10 5 L0 10 z"/></marker>
+            <marker id="mv-v" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" style="fill: var(--cyan)"/></marker>
+          </defs>
+          <!-- Fila 1 -->
+          <text class="m-fase m-t1" x="30" y="24">1 · Analizar</text>
+          <rect class="m-caja m-c1" x="80" y="32" width="200" height="46" rx="10"/><text class="m-app" x="180" y="60" text-anchor="middle">DAFO · CAME</text>
+          <path class="m-flecha" d="M180 80 V114" marker-end="url(#mv-p)"/>
+          <!-- Fila 2 -->
+          <text class="m-fase m-t2" x="30" y="120">2 · Procesos</text>
+          <rect class="m-caja m-c2" x="80" y="128" width="200" height="46" rx="10"/><text class="m-app" x="180" y="156" text-anchor="middle">Flujograma</text>
+          <path class="m-flecha" d="M180 176 V210" marker-end="url(#mv-p)"/>
+          <!-- Fila 3 -->
+          <text class="m-fase m-t3" x="30" y="216">3 · Riesgos</text>
+          <rect class="m-caja m-c3" x="30" y="224" width="140" height="46" rx="10"/><text class="m-app" x="100" y="252" text-anchor="middle">AMFE</text>
+          <rect class="m-caja m-c3" x="190" y="224" width="140" height="46" rx="10"/><text class="m-app" x="260" y="252" text-anchor="middle">Mapa de Riesgos</text>
+          <path class="m-flecha" d="M171 247 H188" marker-end="url(#mv-p)"/>
+          <path class="m-flecha" d="M180 272 V306" marker-end="url(#mv-p)"/>
+          <!-- Fila 4 -->
+          <text class="m-fase m-t4" x="30" y="312">4 · Medir</text>
+          <rect class="m-caja m-c4" x="30" y="320" width="140" height="46" rx="10"/><text class="m-app" x="100" y="348" text-anchor="middle">Indicadores</text>
+          <rect class="m-caja m-c4" x="190" y="320" width="140" height="46" rx="10"/><text class="m-app" x="260" y="348" text-anchor="middle">Tamaño Muestral</text>
+          <path class="m-flecha" d="M180 368 V402" marker-end="url(#mv-p)"/>
+          <!-- Fila 5 -->
+          <text class="m-fase m-t5" x="30" y="408">5 · Verificar</text>
+          <rect class="m-caja m-c5" x="30" y="416" width="140" height="46" rx="10"/><text class="m-app" x="100" y="444" text-anchor="middle">Auditorías</text>
+          <rect class="m-caja m-c5" x="190" y="416" width="140" height="46" rx="10"/><text class="m-app" x="260" y="436" text-anchor="middle"><tspan x="260">Rondas de</tspan><tspan x="260" dy="16">Seguridad</tspan></text>
+          <path class="m-flecha" d="M180 464 V498" marker-end="url(#mv-p)"/>
+          <!-- Fila 6 -->
+          <text class="m-fase m-t6" x="30" y="504">6 · Mejorar</text>
+          <rect class="m-mejora" x="80" y="512" width="200" height="46" rx="23"/><text class="m-app" x="180" y="540" text-anchor="middle">Acciones de mejora</text>
+          <!-- Vuelta a empezar -->
+          <path class="m-vuelta" d="M80 535 H12 V55 H76" marker-end="url(#mv-v)"/>
+          <text class="m-vuelta-txt" x="180" y="582" text-anchor="middle">… y vuelta a empezar</text>
+          <!-- Guía -->
+          <rect class="m-guia" x="12" y="598" width="336" height="60" rx="14"/>
+          <text class="m-guia-txt" x="180" y="624" text-anchor="middle"><tspan x="180">Guía de Calidad y Seguridad</tspan><tspan x="180" dy="18">lo explica todo (próximamente)</tspan></text>
+        </svg>
+        <figcaption id="mapa-desc">Ciclo: 1, analizar la unidad con DAFO · CAME; 2, dibujar los procesos con Flujograma; 3, identificar los riesgos con AMFE y reunirlos en el Mapa de Riesgos; 4, medir con Indicadores y Tamaño Muestral; 5, verificar con Auditorías y Rondas de Seguridad; 6, poner en marcha acciones de mejora, y vuelta a empezar. La Guía de Calidad y Seguridad, que se publicará próximamente, lo une todo.</figcaption>
+      </figure>
+
+      <h3 style="margin-top:22px;font-size:18px">Qué se pasan las apps: los botones «Traer de…»</h3>
+      <p class="seccion-lead" style="margin-bottom:0">Si usas las apps en el mismo navegador, una puede traer lo que hiciste en otra con un solo botón. También vale la copia de seguridad (.json) de la otra app, para trabajar en otro dispositivo o en equipo.</p>
+      <ul class="traer">
+        <li><strong>Flujograma</strong><ul class="chips" aria-label="Trae de"><li>← AMFE</li></ul>Los subprocesos y los fallos prioritarios, como puntos críticos.</li>
+        <li><strong>DAFO · CAME</strong><ul class="chips" aria-label="Trae de"><li>← AMFE</li><li>← Indicadores</li></ul>Cada AMFE como debilidad o fortaleza; indicadores para el plan de acción.</li>
+        <li><strong>AMFE</strong><ul class="chips" aria-label="Trae de"><li>← Indicadores</li></ul>Un indicador ya diseñado para medir cada acción de mejora.</li>
+        <li><strong>Mapa de Riesgos</strong><ul class="chips" aria-label="Trae de"><li>← AMFE</li><li>← Flujograma</li><li>← DAFO</li><li>← Indicadores</li><li>← Rondas</li></ul>Fallos, diagrama, factores marcados, indicadores y lo que falla en las rondas.</li>
+        <li><strong>Auditorías</strong><ul class="chips" aria-label="Trae de"><li>← AMFE</li><li>← Mapa de Riesgos</li><li>← Rondas</li></ul>Los hallazgos clave para el Plan Anual. Además calcula la muestra como Tamaño Muestral.</li>
+        <li><strong>Rondas de Seguridad</strong><ul class="chips" aria-label="Trae de"><li>← AMFE</li><li>← Mapa de Riesgos</li></ul>Los fallos prioritarios como preguntas de la ronda.</li>
+      </ul>
+      <p class="nota">Los datos se copian de una app a otra dentro de tu navegador: no se envían a ningún servidor. Las herramientas de apoyo no intercambian datos.</p>
+    </section>
+
+    <!-- ===== Guía ===== -->
+    <section class="seccion" id="guia" aria-labelledby="t-guia" style="--acento: var(--guia)">
+      <h2 class="seccion-titulo" id="t-guia"><span class="marca" aria-hidden="true"></span>La pieza que lo une todo</h2>
+      <div class="guia">
+        <img class="app-icono" src="iconos/guia.svg" alt="" width="64" height="64" />
+        <div>
+          <h3>Guía de Calidad y Seguridad <span class="pronto">Próximamente</span></h3>
+          <p>Un libro práctico que recorre el ciclo completo con un mismo caso, explica cada herramienta y te dice en cada momento qué app usar.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <!-- ===== AUTORÍA: único sitio con el texto de autoría del portal. Cambiar aquí si se presenta como proyecto propio. ===== -->
+    <div id="autoria">
+      <p class="autoria-area">Área de Calidad y Seguridad del Paciente · Área de Gestión Sanitaria Sur de Córdoba</p>
+      <p class="autoria-autores"><span class="nw">Carlos J. Galán Doval</span> y <span class="nw">Rafael J. Romero de Castilla Gil</span></p>
+      <!-- CONTACTO (pendiente): descomentar y completar cuando se decida.
+      <p class="autoria-contacto">Contacto: <a href="mailto:correo@ejemplo.es">correo@ejemplo.es</a></p>
+      -->
+    </div>
+    <!-- ===== Fin de la autoría ===== -->
+    <p class="pie-legal">Herramientas docentes y de apoyo: no sustituyen el criterio profesional. Las apps guardan los datos solo en tu dispositivo.</p>
+  </footer>
+
+  <script src="app.js?v=2026.01"></script>
+</body>
+</html>
