@@ -36,4 +36,4 @@ Autoría: un único bloque `<div id="autoria">` en el pie de `index.html` (Área
 ## 6. Publicación
 Publicado en https://cjgaland.github.io/ (repo público `cjgaland/cjgaland.github.io`, Pages desde `main`). v2026.03 (2026-10-25): la tarjeta de la Guía tiene el botón «Leer y descargar el borrador», que lleva a la página privada de claude.ai (https://claude.ai/artifact/6ztmqiFCGurvvbXbay9SDT, compartida solo con los autores). El portal es público: no subir aquí el PDF del borrador.
 
-Cada nueva publicación (push), cuando el autor lo pida (autorizado de forma permanente el 2026-10-25). Pasos: copia, `APP_VERSION`, `?v=`, `CACHE_NAME`, revisión en el navegador y commit en español terminado en `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
+El autor autorizó el 2026-10-25 a hacer push siempre, sin preguntar. Pasos de cada versión: copia, `APP_VERSION`, `?v=`, `CACHE_NAME`, revisión en el navegador y commit en español terminado en `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
