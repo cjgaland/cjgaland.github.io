@@ -1,6 +1,6 @@
 # Calidad y Seguridad del Paciente · Apps
 
-Portal de entrada a las apps gratuitas de calidad y seguridad del paciente: DAFO · CAME, Flujograma, AMFE, Mapa de Riesgos, Indicadores, Tamaño Muestral, Auditorías, Rondas de Seguridad, Estándares ACSA y las herramientas de apoyo (Anonimizador RGPD y Normalizador Bibliográfico).
+Portal de entrada a las apps gratuitas de calidad y seguridad del paciente: DAFO · CAME, Flujograma, AMFE, Mapa de Riesgos, Indicadores, Tamaño Muestral, Auditorías, Rondas de Seguridad, Estándares ACSA y las herramientas de apoyo (Anonimizador RGPD, Normalizador Bibliográfico y Legibilidad).
 
 https://cjgaland.github.io/
 

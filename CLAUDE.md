@@ -34,4 +34,4 @@ Autoría: un único bloque `<div id="autoria">` en el pie de `index.html` (Área
 - Copias: `bash ~/.claude/skills/app-copia_seguridad/scripts/copia_seguridad.sh --root "/Users/Trabajo/Desktop/Calidad&Seguridad/Ecosistema Calidad/Portal" --name Portal --exclude .claude`.
 
 ## 6. Publicación
-**Sin publicar** (v2026.01 en local, 2026-10-25). Para publicar, solo cuando el autor lo pida: crear el repositorio público `cjgaland/cjgaland.github.io`, `git remote add origin …`, push a `main` y activar GitHub Pages desde `main` (raíz). Commits en español terminados en `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
+**Sin publicar** (v2026.01 en local, 2026-10-25; v2026.02, con Legibilidad en «Herramientas de apoyo», también en local). Para publicar, solo cuando el autor lo pida: crear el repositorio público `cjgaland/cjgaland.github.io`, `git remote add origin …`, push a `main` y activar GitHub Pages desde `main` (raíz). Commits en español terminados en `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
