@@ -109,6 +109,8 @@ a.app-card:active { transform: scale(.99); }
 .guia .app-icono { width: 64px; height: 64px; border-radius: 15px; }
 .guia h3 { font-size: 19px; font-weight: 800; }
 .guia p { margin: 6px 0 0; color: var(--text-2); font-size: 14.5px; }
+.guia-autores { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 12px; }
+.guia-nota { color: var(--text-2); font-size: 13px; }
 .pronto { display: inline-block; margin-left: 8px; padding: 2px 10px; border-radius: 999px; font-size: 12px; font-weight: 800; letter-spacing: .3px; vertical-align: 3px; color: #fff; background: #4338ca; }
 :root[data-tema="oscuro"] .pronto { color: #1e1b4b; background: #a5b4fc; }
 
