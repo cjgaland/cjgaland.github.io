@@ -7,7 +7,7 @@
 (function () {
   "use strict";
 
-  const APP_VERSION = "2026.06";
+  const APP_VERSION = "2026.07";
   const CLAVE_TEMA = "portal-tema";
 
   // ---------- Tema claro / oscuro ----------

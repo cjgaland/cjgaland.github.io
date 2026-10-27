@@ -9,7 +9,7 @@
 //  Al cambiar cualquier archivo, incrementa CACHE_NAME.
 // ============================================================
 
-const CACHE_NAME = "portal-v6";
+const CACHE_NAME = "portal-v7";
 
 const ASSETS = [
   "./index.html",
