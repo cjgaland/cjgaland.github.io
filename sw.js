@@ -9,7 +9,7 @@
 //  Al cambiar cualquier archivo, incrementa CACHE_NAME.
 // ============================================================
 
-const CACHE_NAME = "portal-v5";
+const CACHE_NAME = "portal-v6";
 
 const ASSETS = [
   "./index.html",
@@ -31,6 +31,7 @@ const ASSETS = [
   "./iconos/mapa-riesgos.png",
   "./iconos/rondas-seguridad.png",
   "./iconos/lectura-critica.png",
+  "./iconos/acr-ishikawa.png",
   "./iconos/anonimizador.png",
   "./iconos/normalizador.png",
   "./iconos/legibilidad.png",
